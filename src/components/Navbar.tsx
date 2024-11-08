@@ -26,9 +26,9 @@ function Navbar({ className }: { className?: string }) {
                     <MenuItem setActive={setActive} active={active} item="Tutoring">
                         <div className="flex flex-col space-y-4 text-sm">
                             {/* Use Link component instead of a tags */}
-                            <HoveredLink href="/web-dev">Tutors Suggestion and Learning Path</HoveredLink>
-                            <HoveredLink href="/interface-design">Practice For your Perfection</HoveredLink>
-                            <HoveredLink href="/seo">Learn as your Mood!! Some Magical.....</HoveredLink>
+                            <HoveredLink href="/learning">Collaborative learning</HoveredLink>
+                            <HoveredLink href="/progression">Skill based Progression</HoveredLink>
+                           
                             
                         </div>
                     </MenuItem>
@@ -47,17 +47,22 @@ function Navbar({ className }: { className?: string }) {
                 
                 <Link href="/mentor">
 
-                    <MenuItem setActive={setActive} active={active} item="Mentor Selection">
+<MenuItem setActive={setActive} active={active} item="Mentor Selection">
 
 
-                    </MenuItem>
-                </Link>
+</MenuItem>
+</Link>
 
                 <Link href="/dashboard">
 
-                    <MenuItem setActive={setActive} active={active} item="DashBoard">
-
-
+                <MenuItem setActive={setActive} active={active} item="Dashboard">
+                        <div className="flex flex-col space-y-4 text-sm">
+                            {/* Use Link component instead of a tags */}
+                            <HoveredLink href="/progress"> Learner Progress Tracking</HoveredLink>
+                            <HoveredLink href="/Performance">Course Performance Metrics</HoveredLink>
+                            <HoveredLink href="/visualization"> Data Visualizations</HoveredLink>
+                            
+                        </div>
                     </MenuItem>
                 </Link>
                

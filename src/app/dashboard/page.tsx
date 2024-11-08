@@ -1,10 +1,10 @@
-'use client'
+'use client';
 import React from 'react'
 
 function page() {
   return (
-    <div className="flex flex-col min-h-screen">
-       This is a page
+    <div>
+     <h1 className='flex justify-center align-middleclassName="text-white text-2xl md:text-6xl font-bold text-center mt-40'>This is dashboard page</h1>
     </div>
   )
 }

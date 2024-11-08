@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Spotlight } from './ui/Spotlight';
+import { HoverBorderGradient } from './ui/hover-border-gradient';
 
 
 function MainSection() {
@@ -17,13 +18,20 @@ function MainSection() {
                 <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, amet odit nisi consequuntur error placeat maiores nemo a reiciendis earum.
                 </p>
-                <div className="mt-4">
-                    <Link href="/courses">
-
-                        Explore Courses
-
-                    </Link>
-                </div>
+                <div className="m-40 flex justify-center text-center">
+      <HoverBorderGradient
+        containerClassName="rounded-full"
+        as="button"
+        className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+      >
+       
+        <span>
+        <Link href="/courses">
+            Explore Courses
+            </Link>
+            </span>
+      </HoverBorderGradient>
+    </div>
             </div>
 
 
